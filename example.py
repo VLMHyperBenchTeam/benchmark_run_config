@@ -7,6 +7,8 @@ if __name__ == "__main__":
         dataset="Passport_MINI",
         framework="Hugging Face",
         model_name="Qwen2-VL-2B",
+        family_name="Qwen2-VL",
+        task_name="VQA",
         prompt_collection="AntonShiryaev.csv",
         docker_image="ghcr.io/vlmhyperbenchteam/qwen2-vl:ubuntu22.04-cu124-torch2.4.0_v0.1.0",
         python_package="model_qwen2-vl",

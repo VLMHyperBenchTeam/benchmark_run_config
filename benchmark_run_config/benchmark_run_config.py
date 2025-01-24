@@ -11,7 +11,7 @@ class BenchmarkRunConfig:
         dataset (str): Название датасета, на котором будем оценивать работу модели.
         framework (str): Название фреймворка для инференса VLM-моделей (например, "Hugging Face", "vLLM", "SgLang").
         model_name (str): Название VLM-модели, которую будем оценивать на бенчмарке (например, "Qwen2-VL-2B").
-        family_name (str): Название семейства VLM-модели, которую будем оценивать на бенчмарке
+        model_family (str): Название семейства VLM-модели, которую будем оценивать на бенчмарке
             (например, "Qwen2-VL").
         task_name (str): Название типа задачи, на которой оцениваем VLM-модель (например, "VQA", "RPO").
         prompt_collection (str): Название csv-файла, содержащего коллекцию промптов для модели,
@@ -44,7 +44,7 @@ class BenchmarkRunConfig:
     dataset: str
     framework: str
     model_name: str
-    family_name : str
+    model_family : str
     task_name : str
     prompt_collection: str
     docker_image: str

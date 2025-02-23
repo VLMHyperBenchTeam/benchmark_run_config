@@ -38,6 +38,7 @@ class BenchmarkRunConfig:
             в датасете в столбце "doc_class" остались только значения равные заданному. Optional. Defaults to None.
         filter_question_type (str | None): Разметка датасета annotation.csv, будет отфильтрована, так чтобы
             в датасете в столбце "question_type" остались только значения равные заданному. Optional. Defaults to None.
+        metric_file (str | None): название файла с метриками
     """
 
     # Обязательные поля (без значений по умолчанию)
@@ -59,6 +60,7 @@ class BenchmarkRunConfig:
     metrics_aggregators: list[str] | None = None
     filter_doc_class: str | None = None
     filter_question_type: str | None = None
+    metric_file: str | None = None
 
     def to_json(self, file_path: str) -> None:
         """

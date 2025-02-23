@@ -14,5 +14,6 @@
     "only_evaluate_metrics": false,
     "metrics_aggregators": null,
     "filter_doc_class": null,
-    "filter_question_type": null
+    "filter_question_type": null,
+    "metric_file": "snils_MODELFRAMEWORK_Qwen2.5-VL-3B-Instruct_VQA_answers_20250223_201510.csv"
 }

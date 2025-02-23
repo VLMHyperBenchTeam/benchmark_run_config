@@ -17,6 +17,8 @@ if __name__ == "__main__":
     )
 
     print(config)
+    
+    config.metric_file = 'snils_MODELFRAMEWORK_Qwen2.5-VL-3B-Instruct_VQA_answers_20250223_201510.csv'
 
     # Сохраняем объект в JSON-файл
     config.to_json("BenchmarkRunConfig.json")
